@@ -1,0 +1,34 @@
+---
+layout: post
+title:  "Mac 神兵利器"
+date:   2015-12-29 22:46:23 +0800
+categories: habit 
+---
+
+* Alfred  
+  神兵利器，快速启动，workflow机制
+* Sizeup  
+  快速调整窗口大小
+* ShadowsocksX  
+  翻墙工具
+* Dash  
+  开发文档查询
+* Sublime Text 3  
+  数量众多的插件，打造个性化编辑器
+* iTerm & oh-my-zsh  
+  iTerm可分屏显示  
+  oh-my-zsh定制主题，可搭配各种插件
+* Tickeys  
+  意淫工具，可模仿机械键盘声音
+* CheatSheet  
+  长按commad可查看当前界面的所有快捷键
+* Chrome  
+  最喜爱的浏览器，简洁飞速，同样可以安装各种扩展
+* GitHub Desktop  
+  桌面版本github，可视化进行一系列操作
+* Evernote  
+  印象笔记，最好用的笔记软件，可通过配置sublime text支持markdown
+* cDock  
+  更改mac dock的样式
+* Sip  
+  屏幕取色器 快捷键：control + alt + p

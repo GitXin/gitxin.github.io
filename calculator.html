@@ -1,0 +1,43 @@
+---
+layout: default
+---
+<div class="home">
+  <div class="form-group">
+    <label for="expression" style="color:white">输入正数：</label>
+    <input class="form-control" id="positive_input" placeholder="请输入正值，以空格隔开 如 '1 2 3'"/>
+  </div>
+  <div class="form-group">
+    <label for="expression" style="color:white">输入负数：</label>
+    <input class="form-control" id="negative_input" placeholder="请输入负值，以空格隔开 如 '1 2 3'即代表'-1 -2 -3'"/>
+  </div>
+  <div> <font color="white">结果：
+      <span id="result"></span></font> 
+  </div>
+  <div align="right">
+    <button class="btn btn-danger" id="calculate_btn">计算</button>
+    <button class="btn btn-danger" id="empty_btn">清空</button>
+  </div>
+</div>
+
+<script type="text/javascript">
+  $("#calculate_btn").click(function(){
+    var positive_arr = $("#positive_input").val().split(" ");
+    var negative_arr = $("#negative_input").val().split(" ");
+    var result = sum(positive_arr) - sum(negative_arr);
+    $("#result").text(result);
+  });
+
+  $("#empty_btn").click(function(){
+    $("#positive_input").val('');
+    $("#negative_input").val('');
+    $("#result").text("");
+  });
+
+  function sum(num_arr){
+    var sum = 0;
+    for(var i=0; i < num_arr.length; i++)
+      if (num_arr[i]!=0)
+        sum += parseFloat(num_arr[i])
+    return sum;
+  }
+</script>
