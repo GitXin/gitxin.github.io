@@ -14,9 +14,17 @@ layout: me
   }
   .img{
     text-align: center;
+    transform:rotate(0deg) scale(0.5);
+  }
+  .cream,.img{
+    transition:transform 2s;
+  }
+  .img:hover{
+    transform: rotate(180deg) scale(1);
   }
   .cream:hover{
     background-color: #9E2C4B;
+    transform:translate(100px);
   }
   .font-face{
     font-family: 'Indie Flower', cursive;
