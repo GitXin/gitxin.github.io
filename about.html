@@ -6,6 +6,13 @@ layout: me
   body{
     background-color: black;
   }
+  div p,h1{
+    font-family: 'Indie Flower', cursive;
+    color: white
+  }
+  div h1{
+    margin-top: 2%;
+  }
   .cream{
     margin: 10px atuo;
     border-radius: 15px;
@@ -13,32 +20,62 @@ layout: me
     background-color: #BEDD3C;
   }
   .img{
-    text-align: center;
-    transform:rotate(0deg) scale(0.5);
+    transform:scale(0.8);
   }
-  .cream,.img{
+  .cream, .img, .self-info-content{
     transition:transform 2s;
   }
   .img:hover{
-    transform: rotate(180deg) scale(1);
+    transform: scale(1.0);
   }
   .cream:hover{
     background-color: #9E2C4B;
     transform:translate(100px);
   }
-  .font-face{
-    font-family: 'Indie Flower', cursive;
-    color: white
-  }
+  .self-info-title, .vertical-text, .self-info-content, .self-info, .img{float: left}
+  .self-info {margin-left:50px;margin-top: 10%;height: 150px;}
+  .self-info p {font-size:20px;}
+  .self-info-content {margin-left: 5px;}
+  .self-info-content p, .self-info-title {background-color: #BEDD3C;padding-left:2%;border-radius: 20px}
+  .self-info-content {transform:translate(100px);visibility: hidden;}
+  .self-info-content p:nth-of-type(1){transition-delays:0s;}
+  .self-info-content p:nth-of-type(2){transition-delay:0.1;}
+  .self-info-content p:nth-of-type(3){transition-delay:0.2s;}
+  .self-info-content, .self-info-title{height: 100%; padding-top: 7%; padding-left:2%;}
+  .vertical-text {margin-right:10px;}
+  .vertical-text p {margin: 0;}
+
+  .self-info:hover .self-info-content {transform: translate(0px);visibility: visible;}
 </style>
-<h1 style="text-align:center;"><font class="font-face">About Me</font></h1>
-<div class="img">
-  <img src="{{site.baseurl}}/images/sanji.png"></img>
+<div><h1 style="text-align:center;">About Me</h1></div>
+<div>
+  <div class="self-info">
+    <div class="self-info-title">
+      <div class="vertical-text">
+        <p>s</p>
+        <p>e</p>
+        <p>l</p>
+        <p>f</p>
+      </div>
+      <div class="vertical-text">
+        <p>i</p>
+        <p>n</p>
+        <p>f</p>
+        <p>o</p>
+      </div>
+    </div>
+    <div class="self-info-content">
+      <p>Name： Cho shin</p>
+      <p>Hobby： reading</p>
+      <p>Goal： GEEK & DESIGNER</p>
+    </div>
+  </div>
+  <div class="img">
+    <img src="{{site.baseurl}}/images/sanji.png"></img>
+  </div>
 </div>
-<center>
+<!-- <center>
     <h3 class="cream"><font class="font-face">Name： Cho shin</font></h3>
     <h3 class="cream"><font class="font-face">Hobby： reading </font></h3>
     <h3 class="cream"><font class="font-face">Goal： Geek \ Desginer</font></h3>
-</center>
-<div>
-</div>
+</center> -->
