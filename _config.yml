@@ -17,4 +17,4 @@ twitter_username: jekyllrb
 github_username:  GitXin
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
